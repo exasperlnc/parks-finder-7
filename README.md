@@ -1,24 +1,41 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Versions
 
-Things you may want to cover:
+Rails 5.2.7
 
-* Ruby version
+Ruby 2.7.4
 
-* System dependencies
+## Setup
+Run through the standard Rails setup.
 
-* Configuration
+```bash
+$ bundle install
+$ rake db:{create,migrate}
+$ rails s
+```
 
-* Database creation
+Navigate to `http://localhost:3000`
 
-* Database initialization
+_Note: This should bring up an error, but you should be able to start the server fine._
 
-* How to run the test suite
+### Challenge
 
-* Services (job queues, cache servers, search engines, etc.)
+Sign up for a National Park Service API Key [here](https://www.nps.gov/subjects/developer/get-started.htm)
 
-* Deployment instructions
+[National Park Service API Docs](https://www.nps.gov/subjects/developer/api-documentation.htm)
 
-* ...
+Complete the following user story
+
+```
+As a user,
+When I select "Tennessee" from the form,
+(Note: use the existing form)
+And click on "Find Parks",
+I see the total of parks found,
+And for each park I see:
+- full name of the park
+- description
+- direction info
+- standard hours for operation
+```
